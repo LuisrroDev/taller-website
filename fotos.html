@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Gallery</title>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item .desc {
+    padding: 15px;
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+</style>
+</head>
+<body>
+
+<h2>Galeria</h2>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/all.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/all.jpg" alt="Cinque Terre">
+        </a>
+        <div class="desc">Lamparas y ventiladores reparados</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/bat3.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/bat3.jpg" alt="Forest">
+        </a>
+        <div class="desc">Modulo de bateria a pedido de una manicuris</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/bat4.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/bat4.jpg" alt="Northern Lights">
+        </a>
+        <div class="desc">Baterias con BMS</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/bateria 2.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/bateria 2.jpg" alt="Mountains">
+        </a>
+        <div class="desc">Baterias con BMS</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/bateria.webp" target="_blank">
+            <img src="../Electronic-k/galeria/bateria.webp" alt="Mountains">
+        </a>
+        <div class="desc">Baterias con BMS</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/bateria1.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/bateria1.jpg" alt="Mountains">
+        </a>
+        <div class="desc">Reparacion de bateria de moto eléctrica</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/bici-ev.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/bici-ev.jpg" alt="Mountains">
+        </a>
+        <div class="desc">Bicicleta eléctrica con luces y aceleración reparadas</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/fan1.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/fan1.jpg" alt="Mountains">
+        </a>
+        <div class="desc">Ventiladores recargables reparados</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/fan2.jpeg" target="_blank">
+            <img src="../Electronic-k/galeria/fan2.jpeg" alt="Mountains">
+        </a>
+        <div class="desc">Ventiladores recargables reparados</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/fan3.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/fan3.jpg" alt="Mountains">
+        </a>
+        <div class="desc">Ventiladores recargables reparados</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/fan 4.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/fan 4.jpg" alt="Mountains">
+        </a>
+        <div class="desc">Ventiladores recargables reparados</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/bocina1.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/bocina1.jpg" alt="Mountains">
+        </a>
+        <div class="desc">Bocinas bluetooth reparadas</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/bocina2.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/bocina2.jpg" alt="Mountains">
+        </a>
+        <div class="desc">Bocinas bluetooth reparadas</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="../Electronic-k/galeria/bocina3.jpg" target="_blank">
+            <img src="../Electronic-k/galeria/bocina3.jpg" alt="Mountains">
+        </a>
+        <div class="desc">Bocinas bluetooth reparadas</div>
+    </div>
+
+    <!-- <div class="gallery-item">
+        <a href="img_mountains.jpg" target="_blank">
+            <img src="/facebook-messenger.svg" alt="Mountains">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div> -->
+
+<div class="clearfix"></div>
+
+</body>
+
+</html>
