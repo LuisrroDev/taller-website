@@ -58,7 +58,12 @@ body {
 .hero {
     position: relative;
     height: 100vh; /*full vieport height */
-    background: url('img/img1.jpg') no-repeat center center/cover;
+    background: #f0f0f0;
+    background-image: url('img/img1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    will-change: transform;
 }
 
 .overlay {
@@ -189,11 +194,11 @@ img {
 }
 
 .fb {
-    background-image: url("../Electronic-k/facebook.svg");
+    background-image: url("./facebook.svg");
 }
 
 .wp {
-    background-image: url("../Electronic-k/whatsapp.svg");
+    background-image: url("./whatsapp.svg");
 }
 .contact {
     display: flex;
@@ -265,6 +270,7 @@ span {
     border-radius: 8px;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    will-change: transform;
 }
 
 .gallery-container img:hover {

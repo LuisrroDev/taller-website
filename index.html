@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller Electronic-k</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="imagen/jpg" href="C:\Users\Luisrr\Desktop\Coding stuff\Electronic-k\img51.jpg" />
+    <link rel="icon" type="imagen/jpg" href="./img51.jpg" />
+    
+    <!-- Preload social media icons -->
+    <link rel="preload" href="./facebook.svg" as="image">
+    <link rel="preload" href="./whatsapp.svg" as="image">
+    
+    <!-- Preload hero image -->
+    <link rel="preload" href="./img/img1.jpg" as="image">
 </head>
 <body>
     <section class="hero">
@@ -63,9 +70,9 @@
         <h2>¡Conoce algunos de nuestros trabajos!</h2>
         <article class="pics">
             <div class="gallery-container">
-                <img src="img/mr1.jpg" alt="foto1">
-                <img src="img/mr2.jpg" alt="foto2">
-                <img src="img/mr3.jpg" alt="foto3">
+                <img loading="lazy" src="img/mr1.jpg" alt="foto1">
+                <img loading="lazy" src="img/mr2.jpg" alt="foto2">
+                <img loading="lazy" src="img/mr3.jpg" alt="foto3">
             </div>
             <a class="fotos" href="fotos.html">Ver más fotos</a>
         </article>
