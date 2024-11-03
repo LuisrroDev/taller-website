@@ -25,7 +25,7 @@ body {
   }
   
   .dropdown-content {
-    display: none;
+      display: none;
     /* position: absolute; */
     background-color: #f9f9f9;
     min-width: 160px;
@@ -174,19 +174,26 @@ img {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.fb {
-    width: 20px;
-    height: 20px;
-    background-image: url("facebook.svg"); 
-}
-.wp {
-    
-    
-    background-image: url("Whatsapp.png");
-}
+ 
 .contact-h2 {
     margin-top: 80px;
     /* text-shadow: 1px 1px 2px rgb(255, 254, 254), 0 0 25px rgb(16, 86, 191), 0 0 5px darkblue; */
+}
+.fb, .wp {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fb {
+    background-image: url("../Electronic-k/facebook.svg");
+}
+
+.wp {
+    background-image: url("../Electronic-k/whatsapp.svg");
 }
 .contact {
     display: flex;
@@ -215,6 +222,12 @@ span {
     .responsive {
       width: 100%;
     }
+    .pics {
+        flex-direction: column;
+    }
+    .gallery-container {
+        flex-direction: column;
+    }
   }
 
 .social-icons {
@@ -224,22 +237,6 @@ span {
     margin-bottom: 20px;
 }
 
-.fb, .wp {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.fb {
-    background-image: url("../Electronic-k/facebook.svg");
-}
-
-.wp {
-    background-image: url("../Electronic-k/whatsapp.svg");
-}
 
 .gallery {
     padding: 2rem 0;
