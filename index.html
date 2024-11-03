@@ -10,6 +10,12 @@
     <!-- Only preload hero image -->
     <link rel="preload" href="./img/img1.jpg" as="image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link 
+        rel="preload" 
+        as="image" 
+        href="./img/img1.jpg" 
+        fetchpriority="high"
+    >
 </head>
 <body>
     <section class="hero">
@@ -67,9 +73,30 @@
         <h2>¡Conoce algunos de nuestros trabajos!</h2>
         <article class="pics">
             <div class="gallery-container">
-                <img loading="lazy" src="img/mr1.jpg" alt="foto1">
-                <img loading="lazy" src="img/mr2.jpg" alt="foto2">
-                <img loading="lazy" src="img/mr3.jpg" alt="foto3">
+                <img 
+                    loading="lazy" 
+                    src="img/mr1.jpg" 
+                    alt="foto1"
+                    width="320" 
+                    height="320"
+                    decoding="async"
+                >
+                <img 
+                    loading="lazy" 
+                    src="img/mr2.jpg" 
+                    alt="foto2"
+                    width="320" 
+                    height="320"
+                    decoding="async"
+                >
+                <img 
+                    loading="lazy" 
+                    src="img/mr3.jpg" 
+                    alt="foto3"
+                    width="320" 
+                    height="320"
+                    decoding="async"
+                >
             </div>
             <a class="fotos" href="fotos.html">Ver más fotos</a>
         </article>

@@ -64,6 +64,7 @@ body {
     background-position: center center;
     background-size: cover;
     will-change: transform;
+    content-visibility: auto;
 }
 
 .overlay {
@@ -269,16 +270,17 @@ span {
     margin-bottom: 20px;
     overflow-x: auto;
     padding: 20px 0;
+    content-visibility: auto;
+    contain: content;
 }
 
 .gallery-container img {
     width: 320px;
     height: 320px;
     object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0);
     will-change: transform;
+    background: #f0f0f0;
 }
 
 .gallery-container img:hover {
